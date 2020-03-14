@@ -98,7 +98,6 @@ export default {
   methods: {
     langChange: function() {
       this.lang = this.lang === "EN" ? "PT" : "EN";
-      this.textObject = this.lang === "EN" ? TextObjects.en : TextObjects.pt;
     }
   },
   created: function() {
