@@ -12,16 +12,16 @@ const TextObjects = {
       "I’m working as an intern at my university, developing a optimization tool for academic conferences. Also working as fullstack developer at Beco da Eletronica, which i’m Co-founder."
   },
   pt: {
-    heading: "Oi, meu nom é Felipe Nunes e eu estou",
+    heading: "Oi, meu nome é Felipe Nunes e eu estou",
     box1f: "APRENDENDO",
     box1b:
-      "Faço bacharelado em engenharia de computação. E estou aprendendo desenvolvimento independentemente.",
+      "Faço bacharelado em engenharia de computação. E estou aprendendo desenvolvimento web independentemente.",
     box2f: "CONTRIBUINDO",
     box2b:
       "Atualmente faço parte do time de otimização do LASER, pesquisando no ramo de pesquisa operacional.",
     box3f: "DESENVOLVENDO",
     box3b:
-      "Atualmente sou estagiário na minha universidade, desenvolvendo uma ferramenta de otimização para conferências acadêmicas. E também trabalho como fullstack dev no Beco da Eletrônica, que também sou co-fundador."
+      "Atualmente sou estagiário na minha universidade, desenvolvendo uma ferramenta de otimização para conferências acadêmicas. E também trabalho como fullstack dev no Beco da Eletrônica, onde também sou co-fundador."
   }
 };
 
