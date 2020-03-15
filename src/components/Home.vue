@@ -28,7 +28,7 @@
             cols="12"
             sm="4"
             xs="12"
-            style="height: 100px; width: 300px;"
+            style="height: 150px; width: 300px;"
             class="box-info"
           >
             <div class="front">
