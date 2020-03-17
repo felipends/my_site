@@ -101,13 +101,9 @@ export default {
     }
   },
   created: function() {
-    this.cards_text[0] = this.textObject["box1f"];
-    this.cards_text[1] = this.textObject["box2f"];
-    this.cards_text[2] = this.textObject["box3f"];
-
-    this.back_text[0] = this.textObject["box1b"];
-    this.back_text[1] = this.textObject["box2b"];
-    this.back_text[2] = this.textObject["box3b"];
+    const userLang = navigator.language || navigator.userLanguage; 
+    
+    this.lang = userLang === "pt-BR" ? "PT" : "EN";
   },
   watch: {
     lang: function(val) {
