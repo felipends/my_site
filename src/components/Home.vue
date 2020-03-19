@@ -47,7 +47,11 @@
       </v-container>
       <v-container style="width: 300px;">
         <v-row justify="center" align="center" style="height: 100px;">
-          <a href="https://github.com/felipends" style="text-decoration: none;">
+          <a
+            href="https://github.com/felipends"
+            style="text-decoration: none;"
+            class="social"
+          >
             <v-icon
               style="color: white;"
               v-text="'$github'"
@@ -57,6 +61,7 @@
           <a
             href="https://instagram.com/felipends"
             style="text-decoration: none;"
+            class="social"
           >
             <v-icon
               style="color: white;"
@@ -67,6 +72,7 @@
           <a
             href="https://www.linkedin.com/in/felipe-nunes-b2a9761a2/"
             style="text-decoration: none;"
+            class="social"
           >
             <v-icon
               style="color: white;"
@@ -89,10 +95,10 @@ export default {
   data() {
     return {
       lang: "PT",
-      textHeading: TextObjects.pt.heading,
+      textHeading: "",
       cards_text: [],
       back_text: [],
-      textObject: TextObjects.pt
+      textObject: null
     };
   },
   methods: {
@@ -101,8 +107,8 @@ export default {
     }
   },
   created: function() {
-    const userLang = navigator.language || navigator.userLanguage; 
-    
+    const userLang = navigator.language || navigator.userLanguage;
+
     this.lang = userLang === "pt-BR" ? "PT" : "EN";
   },
   watch: {
@@ -110,14 +116,8 @@ export default {
       this.textObject = val === "EN" ? TextObjects.en : TextObjects.pt;
 
       this.textHeading = this.textObject["heading"];
-
-      this.cards_text[0] = this.textObject["box1f"];
-      this.cards_text[1] = this.textObject["box2f"];
-      this.cards_text[2] = this.textObject["box3f"];
-
-      this.back_text[0] = this.textObject["box1b"];
-      this.back_text[1] = this.textObject["box2b"];
-      this.back_text[2] = this.textObject["box3b"];
+      this.cards_text = this.textObject["boxf"];
+      this.back_text = this.textObject["boxb"];
     }
   }
 };
@@ -162,5 +162,10 @@ export default {
 .box-info:focus .back,
 .box-info:hover .back {
   transform: rotateY(360deg);
+}
+
+.social:hover {
+  transform: translateY(-5px);
+  transition-duration: 300ms;
 }
 </style>
