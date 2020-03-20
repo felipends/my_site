@@ -92,9 +92,10 @@
 <script>
 import TextObjects from "../services/textObject.js";
 export default {
+  name: 'Home',
   data() {
     return {
-      lang: "PT",
+      lang: "",
       textHeading: "",
       cards_text: [],
       back_text: [],
