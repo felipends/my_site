@@ -1,10 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar absolute style="background: black" elevate-on-scroll>
-      <v-toolbar-title style="color: white">felipends</v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn color="white" outlined @click="langChange">LANG: {{ lang }}</v-btn>
-    </v-app-bar>
+    <AppBar :cb_lang="langChange" :lang="lang" />
     <v-content style="margin-top: 50px; background: black;" height="100vh">
       <v-container justify="center" class="prof">
         <v-row justify="center" align="center" max-height="500">
@@ -90,9 +86,13 @@
 </template>
 
 <script>
+import AppBar from "../components/AppBar";
 import TextObjects from "../services/textObject.js";
 export default {
   name: 'Home',
+  components: {
+    AppBar
+  },
   data() {
     return {
       lang: "",
