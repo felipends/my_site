@@ -66,7 +66,7 @@
             ></v-icon>
           </a>
           <a
-            href="https://www.linkedin.com/in/felipe-nunes-b2a9761a2/"
+            href="https://www.linkedin.com/in/felipends"
             style="text-decoration: none;"
             class="social"
           >
