@@ -1,6 +1,6 @@
 # My personal website
 
-You can check it [here](felipends.now.sh)
+You can check it [here](https://felipends.now.sh)
 
 ## Project motivation ☕
 
@@ -19,8 +19,8 @@ I also aimed to improve my skills on:
 
 ### Development :computer:
 
- - [Vuejs](vuejs.org)
- - [Vuetify](vuetifyjs.com)
+ - [Vuejs](https://vuejs.org)
+ - [Vuetify](https://vuetifyjs.com)
 
 ### Deployment :rocket:
 
