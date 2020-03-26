@@ -1,24 +1,27 @@
-# portifolio-vue
+# My personal website
 
-## Project setup
-```
-yarn install
-```
+You can check it at felipends.now.sh
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+## Project motivation ☕
 
-### Compiles and minifies for production
-```
-yarn build
-```
+I made this because i got me in a position that, as a developer, i need something to showcase my projects and skills, also aggregate my social networks.
 
-### Lints and fixes files
-```
-yarn lint
-```
+I also aimed to improve my skills on:
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+ - Web development
+ - Front-end styling
+ - Componentization
+ - State management
+ - Language switch practice
+ - Deployment practice
+
+## Tecnologies 
+
+### Development :computer:
+
+ - [Vuejs](vuejs.org)
+ - [Vuetify](vuetifyjs.com)
+
+### Deployment :rocket:
+
+ - [Zeit Now](now.sh)
