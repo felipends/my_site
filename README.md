@@ -1,6 +1,6 @@
 # My personal website
 
-You can check it at felipends.now.sh
+You can check it [here](felipends.now.sh)
 
 ## Project motivation ☕
 
