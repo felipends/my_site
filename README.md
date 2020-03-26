@@ -24,4 +24,4 @@ I also aimed to improve my skills on:
 
 ### Deployment :rocket:
 
- - [Zeit Now](now.sh)
+ - [Zeit Now](https://now.sh)
