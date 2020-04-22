@@ -41,6 +41,40 @@
           </v-col>
         </v-row>
       </v-container>
+      <v-row
+        v-if="$vuetify.breakpoint.xsOnly"
+        class="my-5"
+        justify="center"
+        align="center"
+      >
+        <a
+          href="https://laser.ci.ufpb.br/agricultura-familiar"
+          style="text-decoration: none;"
+        >
+          <v-img
+            style="height: 70px; width: 70px;"
+            src="../assets/logo-light.svg"
+            class="mx-5"
+          ></v-img>
+        </a>
+      </v-row>
+      <v-row
+        v-if="$vuetify.breakpoint.smAndUp"
+        class="mb-5"
+        justify="center"
+        align="center"
+      >
+        <a
+          href="https://laser.ci.ufpb.br/agricultura-familiar"
+          style="text-decoration: none;"
+        >
+          <v-img
+            style="height: 70px; width: 70px;"
+            src="../assets/logo-light.svg"
+            class="mx-5"
+          ></v-img>
+        </a>
+      </v-row>
       <v-container style="width: 300px;">
         <v-row justify="center" align="center" style="height: 100px;">
           <a
@@ -89,9 +123,9 @@
 import AppBar from "../components/AppBar";
 import TextObjects from "../services/textObject.js";
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    AppBar
+    AppBar,
   },
   data() {
     return {
@@ -99,13 +133,13 @@ export default {
       textHeading: "",
       cards_text: [],
       back_text: [],
-      textObject: null
+      textObject: null,
     };
   },
   methods: {
     langChange: function() {
       this.lang = this.lang === "EN" ? "PT" : "EN";
-    }
+    },
   },
   created: function() {
     const userLang = navigator.language || navigator.userLanguage;
@@ -119,8 +153,8 @@ export default {
       this.textHeading = this.textObject["heading"];
       this.cards_text = this.textObject["boxf"];
       this.back_text = this.textObject["boxb"];
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -133,7 +167,7 @@ export default {
 .front,
 .back {
   width: 300px;
-  height: 100px;
+  height: 300px;
   position: absolute;
   display: flex;
   flex-direction: column;
