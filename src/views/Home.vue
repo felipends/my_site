@@ -42,6 +42,13 @@
         </v-row>
       </v-container>
       <v-row
+        class="my-5"
+        justify="center"
+        align="center"
+      >
+        <span style="color: #6a6d73; font-size: 0.8rem;">{{fairtext}}</span>
+      </v-row>
+      <v-row
         v-if="$vuetify.breakpoint.xsOnly"
         class="my-5"
         justify="center"
@@ -133,6 +140,7 @@ export default {
       textHeading: "",
       cards_text: [],
       back_text: [],
+      fairtext: "",
       textObject: null,
     };
   },
@@ -153,6 +161,7 @@ export default {
       this.textHeading = this.textObject["heading"];
       this.cards_text = this.textObject["boxf"];
       this.back_text = this.textObject["boxb"];
+      this.fairtext = this.textObject["fairtext"];
     },
   },
 };
