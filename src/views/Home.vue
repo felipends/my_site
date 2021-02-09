@@ -41,47 +41,6 @@
           </v-col>
         </v-row>
       </v-container>
-      <v-row
-        class="my-5"
-        justify="center"
-        align="center"
-      >
-        <span style="color: #6a6d73; font-size: 0.8rem;">{{fairtext}}</span>
-      </v-row>
-      <v-row
-        v-if="$vuetify.breakpoint.xsOnly"
-        class="my-5"
-        justify="center"
-        align="center"
-      >
-        <a
-          href="https://laser.ci.ufpb.br/agricultura-familiar"
-          style="text-decoration: none;"
-        >
-          <v-img
-            style="height: 70px; width: 70px;"
-            src="../assets/logo-light.svg"
-            class="mx-5"
-          ></v-img>
-        </a>
-      </v-row>
-      <v-row
-        v-if="$vuetify.breakpoint.smAndUp"
-        class="mb-5"
-        justify="center"
-        align="center"
-      >
-        <a
-          href="https://laser.ci.ufpb.br/agricultura-familiar"
-          style="text-decoration: none;"
-        >
-          <v-img
-            style="height: 70px; width: 70px;"
-            src="../assets/logo-light.svg"
-            class="mx-5"
-          ></v-img>
-        </a>
-      </v-row>
       <v-container style="width: 300px;">
         <v-row justify="center" align="center" style="height: 100px;">
           <a
